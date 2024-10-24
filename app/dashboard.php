@@ -18,7 +18,6 @@ try {
     exit;
 }
 
-// Fetch user data (optional)
 $user_id = $_SESSION['user_id'];
 $stmt = $pdo->prepare("SELECT * FROM users WHERE in_user = ?");
 $stmt->execute([$user_id]);
